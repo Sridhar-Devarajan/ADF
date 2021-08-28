@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@Concat(dataset().SinkFileName,'_',string(utcnow()),'.csv')",
+					"value": "@Concat(dataset().SinkFileName,'.csv')",
 					"type": "Expression"
 				},
 				"folderPath": "ecdc",
