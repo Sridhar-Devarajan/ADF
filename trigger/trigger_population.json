@@ -1,0 +1,24 @@
+{
+	"name": "trigger_population",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_population_data",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/population/blobs/population_by_age",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/0fce3677-9edb-4ac1-8eaf-ce177c3665fc/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/covidreportingsatry1",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
