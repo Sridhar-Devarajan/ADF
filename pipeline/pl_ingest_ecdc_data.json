@@ -27,7 +27,7 @@
 						}
 					},
 					"dataset": {
-						"referenceName": "dl_ecdc_lkp",
+						"referenceName": "dl_ecdc_file_load_lkp",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
