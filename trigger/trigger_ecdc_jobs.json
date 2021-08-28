@@ -3,13 +3,20 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipelines": [],
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_ecdc_data",
+					"type": "PipelineReference"
+				}
+			}
+		],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
 				"frequency": "Month",
 				"interval": 12,
-				"startTime": "2021-08-28T17:41:00",
+				"startTime": "2021-08-28T18:01:00",
 				"timeZone": "India Standard Time"
 			}
 		}
